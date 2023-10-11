@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+.header img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+section {
+    padding: 20px;
+}
+img{
+    height: 600px;
+    width: 500px;
+}
+p{
+   color: #3498db; 
+   font-weight: bold;
+}
+
+
+h3{
+    color: #3498db;
+    font-weight: bold;
+}

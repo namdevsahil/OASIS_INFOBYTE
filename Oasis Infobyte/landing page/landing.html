@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Community Landing Page</title>
+    <style>
+		 body {
+        font-family: Arial, sans-serif;
+        margin: 2px;
+        padding: 2;
+        font-family: 'Rubik Pixels', cursive;
+      }
+      /* Navigation Menu */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      nav a {
+        /* float: left; */
+        display: inline-flex;
+        text-align: center;
+        color: white;
+         font-style: none;
+         margin-inline: 15px;
+      }
+      .gap{
+    text-align: end;
+    align-items: end;
+      }
+nav form {                     display: inline-flex;
+        text-align: center;
+        color: white;
+         font-style: none;
+         margin-inline: 15px;
+      }
+ nav li{
+    display: inline-flex;
+    /* justify-content: end;   */
+    column-gap: 5px;
+
+}
+nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      /* Banner Image */
+.banner {
+        background-image: url(https://images.pexels.com/photos/4057659/pexels-photo-4057659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .banner h1 {
+        font-size: 60px;
+        color: white;
+        text-shadow: 2px 2px #333;
+      }
+     form{
+        justify-content: end;
+        display: inline-flex;
+        margin: 2px;
+
+      }
+      /* Featured Content Section */
+      .featured-content {
+        background-color: #f2f2f2;
+        padding: 50px;
+        text-align: center;
+      }
+      .featured-content h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      .featured-content p {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+      /* Recent Updates Section */
+      .recent-updates {
+        background-color: #fff;
+        padding: 50px;
+        text-align: center;
+      }
+      .recent-updates h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      .recent-updates p {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+      /* Upcoming Events Section */
+      .upcoming-events {
+        background-color: #f2f2f2;
+        padding: 50px;
+        text-align: center;
+      }
+      .upcoming-events h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      .upcoming-events p {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+      }
+      /* Responsive Layout */
+      @media screen and (max-width: 600px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+        }
+        .banner h1 {
+          font-size: 40px;
+        }
+        .featured-content h2 {
+          font-size: 30px;
+        }
+        .recent-updates h2 {
+          font-size: 30px;
+        }
+        .upcoming-events h2 {
+          font-size: 30px;
+        }
+    }
+	</style>
+	
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Featured Content</a></li>
+          <li><a href="#">Recent Updates</a></li>
+          <li><a href="#">Upcoming Events</a></li>
+		  <li class="gap"><form>
+			<input type="text" placeholder="Search..." class=
+      "gap">
+			<button type="submit" class="gap">Search</button>
+		 </form></li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <img src="banner-image.jpg" alt="">
+      </div>
+    </header>
+    <main>
+      <section class="featured-content">
+        <h2>Featured Content</h2>
+        <div class="content">
+          <h3>Article Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod eu dolor eu bibendum. Nullam euismod lectus quis massa lobortis, non lacinia nibh bibendum. Vestibulum volutpat malesuada neque at scelerisque. </p>
+          <a href="#">Read More</a>
+        </div>
+      </section>
+      <section class="recent-updates">
+        <h2>Recent Updates</h2>
+        <div class="updates">
+          <div class="update">
+            <h3>Update Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="date">May 12, 2023</span>
+          </div>
+          <div class="update">
+            <h3>Update Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="date">May 10, 2023</span>
+          </div>
+        </div>
+      </section>
+      <section class="upcoming-events">
+        <h2>Upcoming Events</h2>
+        <div class="events">
+          <div class="event">
+            <h3>Event Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="date">May 20, 2023</span>
+          </div>
+          <div class="event">
+            <h3>Event Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <span class="date">June 1, 2023</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

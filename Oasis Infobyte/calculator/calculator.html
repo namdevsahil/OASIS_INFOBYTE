@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="number" id="display" required>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendToDisplay('7')">1</button>
+        <button onclick="appendToDisplay('7')">2</button>
+        <button onclick="appendToDisplay('7')">3</button>
+        <button onclick="appendToDisplay('7')">4</button>
+        <button onclick="appendToDisplay('7')">5</button>
+        <button onclick="appendToDisplay('7')">6</button>
+        <button onclick="appendToDisplay('7')">8</button>
+        <button onclick="appendToDisplay('7')">9</button>
+        <button onclick="appendToDisplay('7')">0</button>
+        <!-- Add buttons for digits and operators -->
+        <button onclick="calculate()">=</button>
+        <button onclick="calculate()">+</button>
+        <button onclick="calculate()">-</button>
+        <button onclick="calculate()">/</button>
+        <button onclick="calculate()">*</button>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
